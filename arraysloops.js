@@ -117,22 +117,40 @@ for (let i = 0; i < bobsFollowers.length; i++){
 console.log('Both networks have the mutual followers ' + mutualFollowers);
 
 //Arrays Loops - Activity 7
-//INCOMPLETE
+//COMPLETE
 // Research on do...while loop, find out about the difference between
 // for loop, while loop and do...while loop. Give an example of each.
 // What are the pros and cons?
 
-//https://www.programiz.com/javascript/while-loop
-//https://www.freecodecamp.org/news/javascript-loops-explained-for-loop-for/
+//Examples of each loop with pros and cons below
 
-
-// program to display numbers from 1 to 5
-// initialize the variable
-let i = 1, n = 5;
-
-// while loop from i = 1 to 5
-while (i <= n) {
+//For loop example program to display numbers from 1 to 5
+for (let i = 1; i < 6; i++) {
     console.log(i);
-    i += 1;
+  }
+
+//For Loop Pros: Flexible - start where you want, when to end, and how you want to increase your index by
+//For Loop Cons: Potentially mode code to write. Have to define start and end of loop
+
+//While loop example program to display numbers from 1 to 5
+let j = 1, n = 5;
+while (j <= n) {
+    console.log(j);
+    j += 1;
 }
+
+//While Loop Pros: Good for unknown number of iterations/monitoring a condition until such a time as it changes.
+//While Loop Cons: Potential to run infinately if the exit condition does not materialise
+
+
+//Do while loop example program to display numbers from 1 to 5
+let k = 1;
+const m = 5;
+do {
+    console.log(k);
+    k++;
+} while(k <= m);
+
+//Do while Loop Pros: Code is executed for at least one iteration even if the condition is false
+//Do while Loop Cons: Potential to run infinately if the exit condition does not materialise
 
